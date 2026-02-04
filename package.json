@@ -1,0 +1,14 @@
+{
+    "name": "lightweight-ci-assignment",
+    "version": "1.0.0",
+    "description": "A simple project to demonstrate GitHub Actions",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js",
+        "test": "node test.js"
+    },
+    "author": "",
+    "license": "ISC",
+    "keywords": [],
+    "type": "commonjs"
+}
