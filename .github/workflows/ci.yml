@@ -9,8 +9,9 @@ on:
 jobs:
   build-and-test:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout Code
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
@@ -21,8 +22,8 @@ jobs:
       - name: Install Dependencies
         run: npm install
 
-      - name: Run Build and Test
-        run: |
-          npm test
+      - name: Run Build
+        run: node index.js
 
-     
+      - name: Run Tests
+        run: npm test
